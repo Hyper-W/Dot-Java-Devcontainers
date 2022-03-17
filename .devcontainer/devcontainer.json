@@ -1,0 +1,14 @@
+{
+    "name": "java-dev",
+    "dockerComposeFile": [
+        "./docker-compose.yml"
+    ],
+    "service": "java-dev",
+    "workspaceFolder": "/WORKDIR",
+    "extensions": [
+        "vscjava.vscode-java-pack",
+        "saikou9901.evilinspector",
+        "MS-CEINTL.vscode-language-pack-ja",
+        "oderwat.indent-rainbow"
+    ]
+}
