@@ -5,10 +5,13 @@
     ],
     "service": "java-dev",
     "workspaceFolder": "/WORKDIR",
-    "extensions": [
-        "vscjava.vscode-java-pack",
-        "saikou9901.evilinspector",
-        "MS-CEINTL.vscode-language-pack-ja",
-        "oderwat.indent-rainbow"
-    ]
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "vscjava.vscode-java-pack",
+                "saikou9901.evilinspector",
+                "oderwat.indent-rainbow"
+            ]
+        }
+    }
 }
