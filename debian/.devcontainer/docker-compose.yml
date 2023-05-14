@@ -8,7 +8,7 @@ services:
         - GROUP_ID=${GROUP_ID:-1000} # Your GROUP ID
         - JDK_VERSION=${JDK_VERSION:-17} # Install Java Version
         - DEBIAN_VERSION_NAME=${DEBIAN_VERSION_NAME:-stable} # debian code name
-    image: java-dev:ubuntu
+    image: java-dev:debian
     container_name: java-dev
     volumes:
       - type: bind
