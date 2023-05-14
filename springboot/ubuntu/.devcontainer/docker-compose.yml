@@ -1,0 +1,18 @@
+services:
+  springboot-dev:
+    build:
+      context: .
+      args:
+        - USER=${USER:-user} # Your User Name
+        - USER_ID=${USER_ID:-1000} # Your User ID
+        - GROUP_ID=${GROUP_ID:-1000} # Your GROUP ID
+        - JDK_VERSION=${JDK_VERSION:-17} # Install Java Version
+        - UBUNTU_VERSION_NAME=${UBUNTU_VERSION_NAME:-latest} # ubuntu code name
+    image: springboot-dev:ubuntu
+    container_name: springboot-dev
+    volumes:
+      - type: bind
+        source: ./
+        target: /WORKDIR
+    tty: true
+    command: bash
