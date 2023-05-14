@@ -6,7 +6,8 @@ services:
         - USER=${USER:-user} # Your User Name
         - USER_ID=${USER_ID:-1000} # Your User ID
         - GROUP_ID=${GROUP_ID:-1000} # Your GROUP ID
-        - JDK_VERSION=17 # Install Java Version
+        - JDK_VERSION=${JDK_VERSION:-17} # Install Java Version
+        - ALPINE_VERSION_NAME=${ALPINE_VERSION_NAME:-latest} # alpine code name
     image: java-dev:alpine
     container_name: java-dev
     volumes:
